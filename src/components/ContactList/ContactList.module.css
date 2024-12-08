@@ -1,0 +1,13 @@
+.contactList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin: 0 auto;
+    width: 1200px;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-bottom: 40px;
+  
+  }
+  
+
