@@ -7,7 +7,7 @@
   height: 80px;
   border: none;
   border-radius: 10px;
-  background-color: #a30e8f; 
+  background-color: #a30e8f;
   box-shadow: 0 4px 8px #64055a;
   transition: transform 0.3s ease;
 }
@@ -23,7 +23,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #ffe3f4; 
+  color: #ffe3f4;
 }
 
 .icon {
@@ -43,12 +43,12 @@
   font-weight: bold;
   transition: all 300ms ease;
   cursor: pointer;
-  background-color: #cc339a; 
+  background-color: #cc339a;
   color: #ffe3f4;
   box-shadow: 0px 4px 10px rgba(204, 51, 154, 0.3);
 }
 
 .delButton:hover,
 .delButton:focus {
-  background-color: #8b0b63; 
+  background-color: #8b0b63;
 }

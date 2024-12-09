@@ -1,0 +1,23 @@
+/* .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  } */
+.span {
+  font-weight: 700;
+  font-size: large;
+}
+.title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}

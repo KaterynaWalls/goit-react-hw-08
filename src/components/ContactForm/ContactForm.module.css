@@ -6,8 +6,8 @@
   flex-direction: column;
   gap: 16px;
   border-radius: 10px;
-  box-shadow: 4px 4px 8px #64055a; 
-  background-color: #f0d2e8; 
+  box-shadow: 4px 4px 8px #64055a;
+  background-color: #f0d2e8;
   margin-bottom: 24px;
 }
 
@@ -15,16 +15,16 @@
   padding: 10px 20px;
   margin: 0 auto;
   font-weight: bold;
-  background-color: #cc339a; 
+  background-color: #cc339a;
   border: none;
   border-radius: 8px;
-  color: #ffe3f4; 
+  color: #ffe3f4;
   transition: background-color 300ms ease;
 }
 
 .formBtn:hover,
 .formBtn:focus {
-  background-color: #8b0b63; 
+  background-color: #8b0b63;
 }
 
 .contactForm label {
@@ -32,23 +32,23 @@
   flex-direction: column;
   gap: 8px;
   font-weight: bold;
-  color: #500136; 
+  color: #500136;
 }
 
 .inputErr {
-  color: #d63fa4; 
+  color: #d63fa4;
 }
 
 .formInput {
   padding: 8px 20px;
   height: 32px;
   border-radius: 6px;
-  border: 2px solid #a30e8f; 
+  border: 2px solid #a30e8f;
   transition: all 300ms ease;
 }
 
 .formInput:focus,
 .formInput:active {
-  border: 2px solid #ff00e0; 
+  border: 2px solid #ff00e0;
   outline: none;
 }
