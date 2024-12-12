@@ -1,9 +1,10 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useDispatch, useSelector } from "react-redux";
-import { addContact } from "../../redux/contactsOps";
-import { selectContacts } from "../../redux/selectors";
+import { addContact } from "../../redux/contacts/operations";
+import { selectContacts } from "../../redux/contacts/selectors";
 import s from "./ContactForm.module.css";
+import toast from 'react-hot-toast';
 
 const ContactForm = () => {
   const dispatch = useDispatch();
@@ -27,7 +28,7 @@ const ContactForm = () => {
   };
 
   const handleSubmit = (values, { resetForm }) => {
-    // Перевірка на дублювання
+   
     const isDuplicate = contacts.some(
       (contact) =>
         contact.name.toLowerCase() === values.name.toLowerCase() ||
@@ -35,12 +36,18 @@ const ContactForm = () => {
     );
 
     if (isDuplicate) {
-      alert("This contact already exists!");
-      return;
-    }
-
-    // Додавання контакту
+      toast.error("This contact already exists!", {
+        duration: 4000, 
+        style: {
+          border: '1px solid #ff4d4d',
+          padding: '16px',
+          color: '#ff4d4d',
+        },
+    });
+return;
+  }
     dispatch(addContact(values));
+    toast.success("Contact added successfully!");
     resetForm();
   };
 

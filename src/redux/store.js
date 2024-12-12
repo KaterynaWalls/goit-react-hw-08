@@ -35,4 +35,6 @@ export const store = configureStore({
   devTools: import.meta.env.NODE_ENV === "development",
 });
 
+
 export const persistor = persistStore(store);
+ 
