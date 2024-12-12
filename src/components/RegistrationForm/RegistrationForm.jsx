@@ -42,11 +42,11 @@ const RegistrationForm = () => {
       >
         {({ isSubmitting }) => (
           <Form className={s.form}>
-            <Field name='name' placeholder='Enter name' />
+            <Field className={s.field} name='name' placeholder='Enter name' />
             <ErrorMessage name='name' component='div' className={s.error} />
-            <Field name='email' placeholder='Enter email' />
+            <Field className={s.field} name='email' placeholder='Enter email' />
             <ErrorMessage name='email' component='div' className={s.error} />
-            <Field name='password' type='password' placeholder='Enter pass' />
+            <Field className={s.field} name='password' type='password' placeholder='Enter pass' />
             <ErrorMessage name='password' component='div' className={s.error} />
             <button type='submit' disabled={isSubmitting}>
               {isSubmitting ? 'Submitting...' : 'Submit'}

@@ -4,7 +4,7 @@ import s from "./AuthNav.module.css";
 const AuthNav = () => {
   return (
   
-        <div>
+        <div className={s.authNavCon}>
       <NavLink to="/register" className={({ isActive }) => isActive ? `${s.link} ${s.active}` : s.link}>
         Register
       </NavLink>

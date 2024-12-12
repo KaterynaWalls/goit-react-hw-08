@@ -1,70 +1,65 @@
 .wrapper {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;  /* Висота екрану, щоб форма була по центру */
+    background-color: #d1afce;
   }
   
-  /* Заголовок форми */
-  h2 {
+  .textTitle {
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #a12371;
     text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-    font-size: 24px;
+    margin-bottom: 30px;
   }
   
-  /* Форма */
   .form {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
   
-  /* Поля вводу */
-  .form input {
+  .field {
     width: 100%;
     padding: 10px;
+    font-size: 16px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .field:focus {
     outline: none;
-    transition: border-color 0.3s ease;
+    border-color: #6e064c;
+    box-shadow: 0px 0px 5px rgba(216, 43, 144, 0.5);
   }
   
-  .form input:focus {
-    border-color: #007bff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-  }
-  
-  /* Кнопка */
   button {
-    width: 100%;
     padding: 10px;
-    background-color: #007bff;
+    font-size: 18px;
+    background-color: #5f045f;
     color: #fff;
     border: none;
     border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
+  button:hover {
+    background-color: #330779;
+  }
+  
   button:disabled {
-    background-color: #ccc;
+    background-color: #d3d3d3;
     cursor: not-allowed;
-  }
-  
-  button:hover:not(:disabled) {
-    background-color: #0056b3;
-  }
-  
-  /* Повідомлення про помилки */
-  .error {
-    font-size: 12px;
-    color: #dc3545;
-    margin-top: -10px;
-    margin-bottom: 10px;
   }

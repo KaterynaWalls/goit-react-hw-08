@@ -1,12 +1,19 @@
 .headerBar {
+  
     display: flex;
+    flex-direction: row;
+    height: auto;
+    padding: 25px 45px;
+    box-shadow: 10px 10px 8px 1px #026d6d;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #989bf0;
-    color: #fff;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-}
-a {
-  color: #a97ee2;
-}
+    /* gap: 1005px; */
+    background: linear-gradient(to right, #e706a4 0%, rgba(3, 37, 65, 1) 100%);
+    margin-bottom: 25px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+  }

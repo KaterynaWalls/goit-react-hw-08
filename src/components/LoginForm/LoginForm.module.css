@@ -1,51 +1,65 @@
-/* .box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-  } */
-/* .span {
-  font-weight: 700;
-  font-size: large;
-}
-.title {
-  margin-bottom: 20px;
-  text-align: center;
-}
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-} */
-.wrapper{
+.wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   flex-direction: column;
-  gap:20px;
+  align-items: center;
+  height: 100vh;  /* Висота екрану, щоб форма була по центру */
+  background-color: #d1afce;
+}
 
+.textTitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: #a12371;
+  text-align: center;
+  margin-bottom: 30px;
 }
-.form{
+
+.form {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 20px;
-  border-radius: 5px;
-  border: 1px solid black;
-  box-shadow: 0 0 8px 10px lightgray;
+  gap: 15px;
 }
-  .input{
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid black;
-  }
-  button{
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+
+.field {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.field:focus {
+  outline: none;
+  border-color: #6e064c;
+  box-shadow: 0px 0px 5px rgba(216, 43, 144, 0.5);
+}
+
+button {
+  padding: 10px;
+  font-size: 18px;
+  background-color: #5f045f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #330779;
+}
+
+button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}

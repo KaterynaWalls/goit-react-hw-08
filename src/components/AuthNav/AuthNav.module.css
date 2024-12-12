@@ -1,15 +1,25 @@
-.link {
-  display: inline-block;
-  text-decoration: none;
-  padding: 12px;
-  font-weight: 700;
-  color: #2a363b;
+.authNavCon {
+  display: flex;
+  flex-direction: row;
+align-items: center;
+  justify-content: center;
+  gap: 25px;
+  font-family: "Montserrat", sans-serif;
+
+ 
+ 
+
 }
+
+  .link {
+    color: rgb(137, 226, 233);
+    font-weight: bold;
+  }
+  .active {
+    text-decoration: underline;
+    color: #c0ebe1;
+  }
 
 .link:hover {
-  color: gray;
-}
-
-.active {
-  color: #e84ae0;
+  color: #8d6a85;
 }
